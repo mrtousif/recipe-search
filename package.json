@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "heroku-postbuild": "webpack -p",
     "dev:bundle": "webpack --mode development",
     "prod:bundle": "webpack --mode production",
     "dev:start": "webpack-dev-server --mode development --open",
@@ -23,5 +24,8 @@
     "express": "^4.17.1",
     "mathjs": "^6.5.0",
     "uniqid": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=11.0.0"
   }
 }
